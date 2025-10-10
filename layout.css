@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+@media (width >=800px) {
+  main {
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  color: #325118;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  padding: 0px;
+}
+
+h2 {
+  color: #003566;
+  text-align: none;
+  font-family: " Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: #2e2e2e;
+  background-color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #f4f7f3;
+}
+
+header .logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #305c38;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #305c38;
+  font-weight: 500;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+.intro-image img {
+  width: 350px;
+  border-radius: 12px;
+}
+
+.intro-text {
+  max-width: 200px;
+}
+
+.intro-text h2 {
+  color: #305c38;
+  margin-bottom: 15px;
+  width: 200px;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+  background: #dce6d0;
+
+  background-image: url("images/homepage/matcha_pulver.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  opacity: 70px;
+}
+
+.gallery img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.zen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background: #e7f0d8;
+  gap: 40px;
+}
+
+.zen-image img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.zen-text h2 {
+  color: #305c38;
+  margin-bottom: 15px;
+}
+.cta {
+  text-align: center;
+  padding: 60px;
+  background: #f7dcd3;
+}
+
+.cta .btn {
+  background: #305c38;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover {
+  background: #d9e7b0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #305c38;
+}
+
+footer {
+  background: #f4f7f3;
+  padding: 40px;
+  text-align: center;
+}
+
+footer a {
+  color: #305c38;
+  margin: 0 10px;
+  text-decoration: none;
+}

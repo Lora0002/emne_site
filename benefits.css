@@ -1,0 +1,246 @@
+.benefits-section {
+  background-color: #829146; /* lys grøn baggrund */
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.benefits-section h1 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.benefits-item,
+.benefit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-icon img,
+.benefit-icon img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 16px;
+}
+
+.benefits-item h2,
+.benefit-item h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+/* === MIDTERSEKTION – Rig på antioxidanter === */
+.info-section {
+  background-color: #f5f2eb;
+  padding: 100px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.info-tekst {
+  flex: 1 1 320px;
+  max-width: 400px;
+}
+
+.info-tekst img {
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+.info-tekst h2 {
+  color: #405a2b;
+  margin-bottom: 16px;
+}
+
+.info-tekst p {
+  color: #2b2b2b;
+}
+
+/* === BILLEDER OVENPÅ HINANDEN === */
+.image.stack {
+  position: relative;
+  flex: 1 1 400px;
+  max-width: 420px;
+}
+
+.image.stack img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  display: block;
+}
+
+.image.stack img:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.image.stack img:last-child {
+  position: absolute;
+  top: 30px;
+  left: 160px;
+  width: 80%;
+  z-index: 2;
+}
+
+/* === NEDERSTE SEKTION – Stabil og langvarig energi === */
+.bottom-section {
+  background-color: #325118;
+  color: #f5f2eb;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.bottom-section .benefit-icon {
+  margin: 0 auto 20px;
+}
+
+.bottom-section .benefit-icon img {
+  width: 120px;
+  height: 120px;
+  object-fit: center;
+}
+
+.bottom-section h2 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.bottom-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.benefit-details {
+  width: 100%;
+}
+
+/* Generel stil for hver række */
+.benefit-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 100px 20px;
+}
+
+.benefit-row.light {
+  background-color: #f5f2eb;
+  color: #2b2b2b;
+}
+.benefit-row.lightgreen {
+  background-color: #d9e7b0;
+  color: #2b2b2b;
+}
+.benefit-row.dark {
+  background-color: #829146;
+  color: #f5f2eb;
+}
+
+.benefit-row.center {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Kolonner */
+.benefit-col {
+  flex: 1 1 320px;
+  max-width: 500px;
+}
+
+.benefit-col img {
+  width: 100px;
+  height: 100px;
+  object-fit: center;
+  margin-bottom: 20px;
+}
+
+.benefit-col h2 {
+  font-size: 1.3rem;
+  margin-bottom: 16px;
+}
+
+.benefit-col p {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Specifik placering for venstre/højre */
+.benefit-row.dark .benefit-col.left {
+  text-align: left;
+}
+
+.benefit-row.dark .benefit-col.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* === RESPONSIVE JUSTERINGER === */
+@media (max-width: 900px) {
+  .benefit-row {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+
+  .benefit-col img {
+    margin: 0 auto 20px;
+  }
+
+  .benefit-row.dark .benefit-col.left {
+    text-align: center;
+  }
+}
+
+.benefit-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f5f2eb; /* samme som den lyse baggrund */
+  padding: 40px 20px;
+}
+
+.benefit-link span {
+  flex: 1;
+  height: 1px;
+  background-color: #405a2b; /* grøn streg */
+  max-width: 150px;
+  opacity: 0.6;
+}
+
+.benefit-link a {
+  color: #405a2b;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  transition: all 0.25s ease;
+}
+
+.benefit-link a:hover {
+  color: #7b8d48;
+  text-decoration: underline;
+}
