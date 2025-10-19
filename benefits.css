@@ -56,11 +56,20 @@
 .info-tekst {
   flex: 1 1 320px;
   max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .info-tekst img {
   width: 90px;
   margin-bottom: 20px;
+  align-items: center;
+  width: 90px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .info-tekst h2 {
@@ -77,6 +86,8 @@
   position: relative;
   flex: 1 1 400px;
   max-width: 420px;
+  display: flex;
+  align-items: center;
 }
 
 .image.stack img {
@@ -100,8 +111,9 @@
 }
 
 /* === NEDERSTE SEKTION – Stabil og langvarig energi === */
+
 .bottom-section {
-  background-color: #325118;
+  background-color: #829146;
   color: #f5f2eb;
   text-align: center;
   padding: 100px 20px;
@@ -139,9 +151,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   gap: 60px;
   padding: 100px 20px;
+  text-align: center;
 }
 
 .benefit-row.light {
@@ -167,6 +180,7 @@
 .benefit-col {
   flex: 1 1 320px;
   max-width: 500px;
+  min-height: 400 px;
 }
 
 .benefit-col img {
@@ -174,6 +188,8 @@
   height: 100px;
   object-fit: center;
   margin-bottom: 20px;
+  display: block;
+  margin: 0 auto 20px;
 }
 
 .benefit-col h2 {

@@ -1,21 +1,3 @@
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  color: #333;
-  line-height: 1.6;
-}
-
-h2 {
-  text-align: center;
-  color: #355e3b;
-  margin-bottom: 20px;
-}
-
-h3 {
-  color: #355e3b;
-  margin-top: 20px;
-}
-
 img {
   width: 100%;
   border-radius: 12px;
@@ -34,6 +16,9 @@ img {
 .beige-bg {
   background-color: #f7f3ed;
 }
+.darkgreen-bg {
+  background-color: #f7d1c4;
+}
 
 /* Layout */
 .recipe-content {
@@ -48,13 +33,12 @@ img {
   gap: 40px;
 }
 
-.recipe-layout.reverse {
-  flex-direction: row-reverse;
-}
-
 .recipe-image {
   flex: 1;
   min-width: 300px;
+}
+.recipe-layout.reverse {
+  flex-direction: row-reverse;
 }
 
 .recipe-text {
@@ -74,25 +58,37 @@ ul li {
   margin-bottom: 6px;
 }
 
-.cta {
-  text-align: center;
-  padding: 60px;
-  background: #f7dcd3;
+.benefit-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f5f2eb; /* samme som den lyse baggrund */
+  padding: 40px 20px;
 }
 
-.cta .btn {
-  background: #305c38;
-  color: white;
-  padding: 15px 30px;
-  border-radius: 30px;
+.benefit-link span {
+  flex: 1;
+  height: 1px;
+  background-color: #405a2b; /* grøn streg */
+  max-width: 150px;
+  opacity: 0.6;
+}
+
+.benefit-link a {
+  color: #405a2b;
   text-decoration: none;
   font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  transition: all 0.25s ease;
 }
-.btn:hover {
-  background: #d9e7b0;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  border: 2px solid #305c38;
+
+.benefit-link a:hover {
+  color: #7b8d48;
+  text-decoration: underline;
 }
+
 /* Responsiv tilpasning */
 @media (max-width: 768px) {
   .recipe-layout {
