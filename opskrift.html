@@ -7,11 +7,15 @@
     <title>Emnesite</title>
     <link rel="stylesheet" href="Layout.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="opskrift.css" />
+    <link rel="stylesheet" href="styletile.css" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="180x180"
+      href="images/favicon.webp"
+    />
   </head>
 
   <body>
@@ -24,10 +28,10 @@
       <nav>
         <ul class="menu">
           <li><a href="index.html">Forside</a></li>
-          <li><a href="benefits.html">benefits</a></li>
-          <li><a href="opskrift.html">opskrifter</a></li>
-          <li><a href="opskriftto.html">opskrift to</a></li>
-          <li><a href="cafe.html">cafe </a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="opskrift.html">Opskrifter</a></li>
+          <li><a href="opskriftto.html">Opskrift to</a></li>
+          <li><a href="cafe.html">Cafe </a></li>
         </ul>
         <ul class="burger">
           <button class="burger">
@@ -40,19 +44,7 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <h1></h1>
-          <p></p>
-        </div>
-        <img src="" alt="" />
-      </section>
-      <section class="gallery"></section>
-    </main>
-    <footer></footer>
-
-    <main>
-      <section>
+      <section class="hero">
         <h1>Opskrifter med matcha</h1>
         <p>
           Matcha kan meget mere end at blive drukket som klassisk te. Den friske
@@ -64,65 +56,134 @@
           grønne super-ingrediens egentlig er.
         </p>
       </section>
-      <section>
-        <img
-          src="images/opskrift/Matcha_chai.webp"
-          alt="Matcha_chai"
-          class="Matcha_chai_billede"
-        />
-        <h1>Velkommen til matcha-universet</h1>
-        <p>
-          Matcha er mere end bare te – det er ro, energi og smag i samme kop.
-          Udforsk hvordan du kan bringe denne grønne super-ingrediens ind i din
-          hverdag gennem både klassiske drikke og kreative opskrifter. Lad dig
-          inspirere og find nye favoritter.
-        </p>
-      </section>
-      <section>
-        <h1>Gå på opdagelse</h1>
-        <div>
-          <img
-            src="images/opskrift/Matcha_kage.webp"
-            alt="Matcha_kage"
-            class="Matcha_kage_billede"
-          />
-          <h2>Matcha-kage med hvide chokoladestykker</h2>
-        </div>
-        <div>
-          <img
-            src="images/opskrift/Bær_matcha.webp"
-            alt="Bær_matcha"
-            class="Bær_matcha_billede"
-          />
-          <h2>Matcha Iced Latte med Bær</h2>
-        </div>
-        <div>
-          <img
-            src="images/opskrift/matcha_cocktail.webp"
-            alt="matcha_cocktail"
-            class="matcha_cocktail_billede"
-          />
-          <h2>Matcha Citrus Cocktail</h2>
-        </div>
-      </section>
-      <section>
-        <h1>Find din egen matcha-ritual</h1>
-        <p>
-          Matcha er også et øjebliks pause. Når du pisker dit pulver, skummer
-          mælken eller nyder en stille kop, skaber du plads til ro og nærvær i
-          hverdagen. Lad matcha blive dit daglige zen-øjeblik.
-        </p>
-        <img
-          src="images/opskrift/matcha_latte.webp"
-          alt="matcha_latte"
-          class="matcha_latte_billede"
-        />
-      </section>
-      <section>
-        <h1>Se mere her</h1>
-      </section>
-    </main>
 
+      <section class="welcome">
+        <div class="welcome-image">
+          <img
+            src="images/opskrift/Matcha_chai.webp"
+            alt="Matcha_chai"
+            class="Matcha_chai_billede"
+          />
+        </div>
+        <div class="welcome-text">
+          <h1>Velkommen til matcha-universet</h1>
+          <p>
+            Matcha er mere end bare te – det er ro, energi og smag i samme kop.
+            Udforsk hvordan du kan bringe denne grønne super-ingrediens ind i
+            din hverdag gennem både klassiske drikke og kreative opskrifter. Lad
+            dig inspirere og find nye favoritter.
+          </p>
+        </div>
+      </section>
+
+      <section class="discover">
+        <h1>Gå på opdagelse</h1>
+        <div class="card-container">
+          <div class="card">
+            <img
+              src="images/opskrift/Matcha_kage.webp"
+              alt="Matcha_kage"
+              class="Matcha_kage_billede"
+            />
+            <h2>Matcha-kage med hvide chokoladestykker</h2>
+          </div>
+          <div class="card">
+            <img
+              src="images/opskrift/Bær_matcha.webp"
+              alt="Bær_matcha"
+              class="Bær_matcha_billede"
+            />
+            <h2>Matcha Iced Latte med Bær</h2>
+          </div>
+          <div class="card">
+            <img
+              src="images/opskrift/matcha_cocktail.webp"
+              alt="matcha_cocktail"
+              class="matcha_cocktail_billede"
+            />
+            <h2>Matcha Citrus Cocktail</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="ritual">
+        <div class="ritual-text">
+          <h1>Find din egen matcha-ritual</h1>
+          <p>
+            Matcha er også et øjebliks pause. Når du pisker dit pulver, skummer
+            mælken eller nyder en stille kop, skaber du plads til ro og nærvær i
+            hverdagen. Lad matcha blive dit daglige zen-øjeblik.
+          </p>
+        </div>
+        <div class="ritual-image">
+          <img
+            src="images/opskrift/matcha_latte.webp"
+            alt="matcha_latte"
+            class="matcha_latte_billede"
+          />
+        </div>
+      </section>
+      <div class="cta">
+        <a href="opskriftto.html" class="cta-button">se mere her</a>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <img
+            src="images/menu/Chanoma_logo.webp"
+            alt="ChaNoMa Matcha logo"
+            class="footer-logo"
+          />
+          <p>
+            ChaNoMa – Matcha med ro og balance. Vores univers hylder den
+            japanske te-tradition gennem nøje udvalgte matcha og tilbehør. Hos
+            os finder du produkter, der kombinerer kvalitet, bæredygtighed og
+            æstetik – skabt til at give dig et øjeblik af nærvær i hverdagen.
+          </p>
+          <div class="socials">
+            <a href="#"
+              ><img src="images/facebook_logo.webp" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="images/linkdin_logo.webp" alt="LinkedIn"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Virksomhed</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hjælp</h3>
+          <ul>
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section newsletter">
+          <h3>Nyhedsbrev</h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <button type="submit">Tilmeld mig nyhedsbrev</button>
+          </form>
+        </div>
+      </div>
+    </footer>
     <script src="menu.js"></script>
   </body>
 </html>

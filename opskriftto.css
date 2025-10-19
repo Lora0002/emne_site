@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  color: #355e3b;
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #355e3b;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Sektioner */
+.recipe {
+  padding: 60px 20px;
+}
+
+.green-bg {
+  background-color: #d9edc2;
+}
+
+.beige-bg {
+  background-color: #f7f3ed;
+}
+
+/* Layout */
+.recipe-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.recipe-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.recipe-layout.reverse {
+  flex-direction: row-reverse;
+}
+
+.recipe-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.recipe-text {
+  flex: 1;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Lister */
+ul {
+  margin: 10px 0 10px 20px;
+}
+
+ul li {
+  margin-bottom: 6px;
+}
+
+.cta {
+  text-align: center;
+  padding: 60px;
+  background: #f7dcd3;
+}
+
+.cta .btn {
+  background: #305c38;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover {
+  background: #d9e7b0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #305c38;
+}
+/* Responsiv tilpasning */
+@media (max-width: 768px) {
+  .recipe-layout {
+    flex-direction: column;
+  }
+
+  .recipe-text,
+  .recipe-image {
+    flex: 1 1 100%;
+  }
+
+  .recipe-text {
+    padding: 20px;
+  }
+}
