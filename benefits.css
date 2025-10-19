@@ -126,7 +126,6 @@
 .bottom-section .benefit-icon img {
   width: 120px;
   height: 120px;
-  object-fit: center;
 }
 
 .bottom-section h2 {
@@ -180,13 +179,12 @@
 .benefit-col {
   flex: 1 1 320px;
   max-width: 500px;
-  min-height: 400 px;
 }
 
 .benefit-col img {
   width: 100px;
   height: 100px;
-  object-fit: center;
+
   margin-bottom: 20px;
   display: block;
   margin: 0 auto 20px;
