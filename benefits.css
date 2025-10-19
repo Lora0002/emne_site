@@ -1,3 +1,86 @@
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  gap: 40px;
+}
+
+.intro-image img {
+  width: 350px;
+  border-radius: 12px;
+}
+
+.intro-text {
+  max-width: 200px;
+}
+
+.intro-text h2 {
+  color: #305c38;
+  margin-bottom: 15px;
+  width: 200px;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+  background: #dce6d0;
+
+  background-image: url("images/homepage/matcha_pulver.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.zen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+  background: #e7f0d8;
+  gap: 40px;
+}
+
+.zen-image img {
+  width: 350px;
+  border-radius: 20px;
+}
+
+.zen-text h2 {
+  color: #305c38;
+  margin-bottom: 15px;
+}
+.cta {
+  text-align: center;
+  padding: 60px;
+  background: #f7dcd3;
+}
+
+.cta .btn {
+  background: #305c38;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover {
+  background: #d9e7b0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid #305c38;
+}
+
 .benefits-section {
   background-color: #829146; /* lys grøn baggrund */
   color: #fff;
