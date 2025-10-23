@@ -1,76 +1,107 @@
-img {
-  width: 100%;
-  border-radius: 12px;
-  display: block;
+/* ---------- GENEREL OPSÆTNING ---------- */
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  color: #325118;
+  background-color: #f5f2eb;
 }
 
-/* Sektioner */
+img {
+  display: block;
+  width: 100%;
+
+  border-radius: 16px;
+}
+
+/* ---------- OPSKRIFTS-SEKTIONER ---------- */
 .recipe {
-  padding: 60px 20px;
+  padding: 80px 8%;
 }
 
 .green-bg {
-  background-color: #d9edc2;
+  background-color: #d9e7b0;
 }
 
 .beige-bg {
   background-color: #f5f2eb;
 }
+
 .darkgreen-bg {
   background-color: #f7d1c4;
 }
 
-/* Layout */
+/* ---------- INDHOLD OG LAYOUT ---------- */
 .recipe-content {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
+.recipe h2 {
+  text-align: center;
+  font-family: "Zen Antique Soft", serif;
+  color: #325118;
+  margin-bottom: 40px;
+}
+
+/* Layout for tekst og billede side om side */
 .recipe-layout {
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: stretch;
+  justify-content: space-between;
   gap: 40px;
 }
 
-.recipe-image {
-  flex: 1;
-  min-width: 300px;
-}
 .recipe-layout.reverse {
   flex-direction: row-reverse;
 }
 
 .recipe-text {
+  flex: 1 1 35%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-text h3 {
+  margin-top: 25px;
+  color: #829146;
+  font-family: "Zen Antique Soft", serif;
+}
+
+.recipe-text ul {
+  margin: 0 0 20px 20px;
+}
+
+.recipe-image {
+  flex: 1 1 50%;
+  display: flex;
+}
+
+.recipe-image img {
+  width: 100%;
+
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   flex: 1;
-  background: #fff;
-  padding: 25px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Lister */
-ul {
-  margin: 10px 0 10px 20px;
-}
-
-ul li {
-  margin-bottom: 6px;
-}
-
+/* ---------- LINK MELLEM SEKTIONER ---------- */
 .benefit-link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: #f5f2eb; /* samme som den lyse baggrund */
+  background-color: #f5f2eb;
   padding: 40px 20px;
 }
 
 .benefit-link span {
   flex: 1;
   height: 1px;
-  background-color: #405a2b; /* grøn streg */
+  background-color: #405a2b;
   max-width: 150px;
   opacity: 0.6;
 }
@@ -89,18 +120,62 @@ ul li {
   text-decoration: underline;
 }
 
-/* Responsiv tilpasning */
-@media (max-width: 768px) {
+/* ---------- RESPONSIVT DESIGN ---------- */
+@media (max-width: 850px) {
   .recipe-layout {
     flex-direction: column;
+    align-items: center;
+    text-align: left;
   }
 
   .recipe-text,
   .recipe-image {
     flex: 1 1 100%;
+    width: 100%;
   }
 
-  .recipe-text {
-    padding: 20px;
+  .recipe-image img {
+    max-width: 100%;
   }
+
+  .recipe h2 {
+    font-size: 1.6rem;
+  }
+
+  .benefit-link {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .benefit-link span {
+    display: none;
+  }
+}
+
+.recipe-layout {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.recipe-text {
+  flex: 0 0 60% !important;
+  min-width: 60% !important;
+  max-width: 60% !important;
+  font-size: 0.9rem;
+  overflow-y: auto; /* Gør tekstboksen scrollbar  */
+  max-height: 800px;
+}
+
+.recipe-image {
+  flex: 0 0 40% !important;
+  min-width: 40% !important;
+  max-width: 40% !important;
+}
+
+.recipe-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }

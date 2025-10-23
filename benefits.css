@@ -1,5 +1,5 @@
 .benefits-section {
-  background-color: #829146; /* lys grøn baggrund */
+  background-color: #829146;
   color: #fff;
   text-align: center;
   padding: 80px 20px;
@@ -233,14 +233,14 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: #f5f2eb; /* samme som den lyse baggrund */
+  background-color: #f5f2eb;
   padding: 40px 20px;
 }
 
 .benefit-link span {
   flex: 1;
   height: 1px;
-  background-color: #405a2b; /* grøn streg */
+  background-color: #405a2b;
   max-width: 150px;
   opacity: 0.6;
 }
